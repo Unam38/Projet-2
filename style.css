@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'bilboregular';
+    src: url('font/bilbo-regular-webfont.woff2') format('woff2'),
+         url('font/bilbo-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('font/architectsdaughter-webfont.woff2') format('woff2'),
+         url('font/architectsdaughter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+title
+{
+    display: none;
+}
+#banniere
+{
+    width: 33%;
+    flex-direction: column;
+    background-color: #4561df;
+}
+img
+{
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+.gauche, .adres, .about, .loisirs
+{
+    flex-direction: column;
+}
+.box_adresse
+{
+    font-family: 'architects_daughterregular', Impact, "Arial Black", Verdana, sans-serif;
+    color: #1f2017;
+    font-size: 1em;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 10px;
+}
+.contact
+{
+    font-weight: bold;
+}
+.about
+{
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.titreban
+{
+    font-family: 'bilboregular', Impact, "Arial Black", Verdana, sans-serif;
+    border: 3px solid #1f2017;
+    background-color: #1f2017;
+    color: #4561df;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.propos
+{
+    font-family: 'architects_daughterregular', Impact, "Arial Black", Verdana, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.pictos_loisirs
+{
+    justify-content: space-around;
+    align-items: center;
+    color: #1f2017;
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.fa-grunt
+{
+    border: 2px solid #1f2017;
+    border-radius: 50%;
+    padding: 10px 18px 10px 18px;
+}
+.fa-campground, .fa-drumstick-bite
+{
+    border: 2px solid #1f2017;
+    border-radius: 50%;
+    padding: 10px;
+}
+#droite
+{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.formation, .experience, .recommandations
+{
+    flex-direction: column;
+    font-size: 1.5em;
+}
+.grand_titre
+{
+    font-family: 'bilboregular', Impact, "Arial Black", Verdana, sans-serif;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.titre
+{
+    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.resum
+{
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.asterix
+{
+    color: #4561df;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.guerrier
+{
+    border-bottom: 3px solid #4561df;
+    color: #1f2017;
+    margin-bottom: 5px;
+}
+hr
+{
+    width: 95%;
+    border: 1px solid #4561df;
+}
+.formation, .experience, .recommandations
+{
+    flex-direction: column;
+}
+.bloc_droit
+{
+    flex-direction: column;
+}
+.icone
+{
+    color: #4561df;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+.subtitle
+{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: #4561df;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.soustitre
+{
+    font-family: 'bilboregular', Impact, "Arial Black", Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #1f2017;
+    font-size: 0.8em;
+}
+.cible
+{
+    width: 10%;
+    font-size: 1.2em;
+}
+.petitpoint
+{
+    width: 10%;
+    font-size: 0.8em;
+}
+.petitpoint, .cible
+{
+    width: 20px;
+    color: #4561df;
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.detail, .format
+{
+    font-family: 'architects_daughterregular', Impact, "Arial Black", Verdana, sans-serif;
+    font-size: 0.7em;
+}
+.detail
+{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.date, .lieu
+{
+    flex-direction: column;
+    line-height: 1.1em;
+}
+.boite_date
+{
+	display: flex;
+	flex-direction: row;
+    width: 35%;
+    justify-content: flex-start;
+}
+.lieu
+{
+    width: 55%;
+}
+.footer
+{
+	display: flex;
+    font-family: 'architects_daughterregular', Impact, "Arial Black", Verdana, sans-serif;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.reco
+{
+    flex-direction: column;
+    font-size: 0.7em;
+    line-height: 1.3em;
+}
+
+@media screen and (max-width: 750px)
+{
+ body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #banniere
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .photo
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .box_adresse
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact
+    {
+        flex-flow: row wrap;
+    }
+    .about
+    {
+        margin-bottom: 30px;
+    }
+    .pictos_loisirs
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #droite
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .titre
+    {
+        font-size: 3.3em;
+        flex-direction: row;
+    }
+    .soustitre
+    {
+        font-size: 0.7em;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    hr
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .resum
+    {
+        font-size: 1.5em;
+        flex-direction: row;
+    }
+    .formation, .experience, .recommandations
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .detail
+    {
+        flex-direction: column;
+    }
+    .boite_date
+    {
+        flex-direction: row;
+        width: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .date
+    {
+        padding: 0;
+    }
+    .cible, .petitpoint
+    {
+        width: 10%;
+        padding: 0;
+        margin-right: 0;
+    }
+    .lieu
+    {
+        width: 90%;
+        padding-left: 10%;
+        line-height: 1.8em;
+    }
+    .footer
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+    .reco
+    {
+       line-height: 1.5em;
+       margin: 5px;
+       
+    }
+
+}
+@media screen and (min-width: 751px) and (max-width: 980px)
+{
+    body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #banniere
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .photo
+    {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .box_adresse
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact
+    {
+        flex-flow: row wrap;
+    }
+    .about
+    {
+        margin-bottom: 30px;
+    }
+    .pictos_loisirs
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #droite
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .titre
+    {
+        font-size: 3.3em;
+        flex-direction: row;
+    }
+    .soustitre
+    {
+        font-size: 0.7em;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    hr
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .resum
+    {
+        font-size: 1.5em;
+        flex-direction: row;
+    }
+    .formation, .experience, .recommandations
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .boite_date
+    {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+    .reco
+    {
+       line-height: 1.2em;
+       margin: 5px;
+       
+    }
+}
+@media screen and (min-width: 1300px)
+{
+    .titre
+    {
+        font-size: 6em;
+    }
+    .resum
+    {
+        font-size: 2em;
+    }
+}
