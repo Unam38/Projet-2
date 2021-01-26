@@ -80,6 +80,7 @@ img
 }
 .pictos_loisirs
 {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     color: #1f2017;
